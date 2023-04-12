@@ -1,8 +1,9 @@
 while True:
     x,y = map(int, input().split())
-    if x>y:
-        print('{} {}'.format(y,x))
-    elif x==y==0:
+    if x==y==0:
         break
+    elif x>y:
+        print(f'{y} {x}')
+  
     else:
-        print('{} {}'.format(x,y))
+        print(f'{x} {y}')
