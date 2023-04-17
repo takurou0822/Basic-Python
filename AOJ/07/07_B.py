@@ -4,12 +4,11 @@ while True:
         break
     else:
 
-        q = []
+        count = 0
         for a in range(1, n+1):
             for b in range(a+1, n+1):
                 for c in range(b+1, n+1):
                     if a+b+c == x:
-
-                        q.append('{0} {1} {2}.format(a,b,c) ')  
+                        count += 1
    
-        print(len(q))
+        print(count)
